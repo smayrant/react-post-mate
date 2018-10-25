@@ -1,1 +1,1 @@
-A simple app that retrieves data from jsonplaceholder.typicode.com using Axios and displays it on the page with styling from Materialize. The links to the different forms of data was created with React Router.
+A simple app that retrieves data from jsonplaceholder.typicode.com using Axios and displays it on the page with styling from Materialize. The links to the static and API data was created with React Router.
