@@ -7,7 +7,7 @@ const Navbar = props => {
             <div className="container">
                 <a className="brand-logo">Post Mate</a>
                 <ul className="right">
-                    <li><NavLink to="/albums">Albums</NavLink></li>
+                    <li><NavLink to="/comments">Comments</NavLink></li>
                     <li><NavLink to="/posts">Posts</NavLink></li>
                     <li><NavLink to="/users">Users</NavLink></li>
                 </ul>
