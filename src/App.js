@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Comments from './components/Comments';
-import Posts from './components/Posts';
-import Users from './components/Users';
+import Contact from './components/Contact';
 
 class App extends Component {
   render() {
@@ -12,8 +11,7 @@ class App extends Component {
         <div className="App">
           <Navbar />
           <Route path="/comments" component={Comments} />
-          <Route path="/posts" component={Posts} />
-          <Route path="/users" component={Users} />
+          <Route path="/contact" component={Contact} />
         </div>
       </BrowserRouter>
     )
