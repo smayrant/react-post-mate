@@ -21,6 +21,7 @@ class Comments extends Component {
     render() {
         // retrieve comments property from state using destructuring
         const { comments } = this.state;
+        // if there are comments to display, display them. Otherwise, display a 'no comments' message
         const commentList = comments.length ? (
             comments.map(comment => {
                 return (
