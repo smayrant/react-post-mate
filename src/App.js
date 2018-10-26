@@ -1,9 +1,10 @@
-import React, { Component } from "react";
-import { BrowserRouter, Route } from 'react-router-dom';
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Comments from './components/Comments';
 import Contact from './components/Contact';
+import Post from './components/Post';
 
 class App extends Component {
   render() {
@@ -11,9 +12,12 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Navbar />
-          <Route path="/home" component={Home} />
-          <Route path="/comments" component={Comments} />
-          <Route path="/contact" component={Contact} />
+          <Switch>
+            <Route path="/home" component={Home} />
+            <Route path="/comments" component={Comments} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/:post_id" component={Post} />
+          </Switch>
         </div>
       </BrowserRouter>
     )

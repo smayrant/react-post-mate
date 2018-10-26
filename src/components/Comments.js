@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 class Comments extends Component {
     // state is initially set to an empty array
@@ -27,7 +28,10 @@ class Comments extends Component {
                 return (
                     <div className="comment card" key={comment.id}>
                         <div className="card-content">
-                            <span className="card-title">Name: {comment.name}</span>
+                            <Link to={'/' + comment.id}>
+                                <span className="card-title">Name: {comment.name}
+                                </span>
+                            </Link>
                             <p>Comment: {comment.body}</p>
                         </div>
                     </div>
